@@ -5,6 +5,16 @@
   text-align: center;
 }
 
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
