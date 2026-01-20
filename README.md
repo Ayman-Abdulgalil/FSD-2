@@ -1,16 +1,69 @@
-# React + Vite
+# UI Component Libraries Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Aim
+Demonstrate how to import and integrate pre-made UI materials and components from popular libraries like Material-UI and Bootstrap into a React/Vite project. This project showcases the ease of using professional design systems to build polished user interfaces quickly.
 
-Currently, two official plugins are available:
+## Steps
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Project Setup**
+   - Initialize a Vite + React project using `npm create vite@latest`
+   - Navigate to the project directory
 
-## React Compiler
+2. **Install Dependencies**
+   ```bash
+   npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
+   npm install bootstrap react-bootstrap
+   ```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. **Import Component Libraries**
+   - Import Bootstrap CSS in `main.jsx`
+   - Import Material-UI components as needed in component files
+   - Use ES6 imports to bring in specific components
 
-## Expanding the ESLint configuration
+4. **Create Demo Components**
+   - Build `MaterialUIDemo.jsx` showcasing MUI components
+   - Build `BootstrapDemo.jsx` showcasing Bootstrap components
+   - Organize components in a `/components` folder
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5. **Implement Tab Navigation**
+   - Use Material-UI's Tab component to switch between demos
+   - Create a clean, organized layout in `App.jsx`
+
+6. **Run and Test**
+   - Start development server with `npm run dev`
+   - Explore different components and their variants
+
+## Learning Outcomes
+
+- **Understanding Component Libraries**: Learn how modern UI frameworks provide ready-to-use, accessible components that follow design best practices
+
+- **Import Syntax Mastery**: Gain proficiency with named imports and destructuring to selectively import only needed components, reducing bundle size
+
+- **Design System Integration**: Understand how to integrate multiple design systems (Material-UI and Bootstrap) in a single project
+
+- **Rapid Prototyping Skills**: Experience how pre-built components accelerate development and allow focus on functionality rather than styling from scratch
+
+- **Component Customization**: Learn to customize pre-made components using props, variants, and styling options provided by the libraries
+
+- **Responsive Design**: Observe how component libraries handle responsiveness and provide utilities (Grid, Container, etc.) for layout management
+
+## Technologies Used
+
+- **Vite** - Fast build tool and dev server
+- **React** - UI library for building component-based interfaces
+- **Material-UI (MUI)** - Comprehensive React component library implementing Material Design
+- **React Bootstrap** - Bootstrap components rebuilt for React
+- **Emotion** - CSS-in-JS library used by Material-UI
+
+## Running the Project
+
+```bash
+npm install
+npm run dev
+```
+
+Then open your browser to `http://localhost:5173`
+
+---
+
+**Note**: This is an educational demonstration project showing how to leverage existing UI component libraries to build professional interfaces efficiently.
